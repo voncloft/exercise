@@ -1,0 +1,10 @@
+Folders:
+	functions:
+		Used for custom functions
+	include:
+		important files that are needed to make website work
+	php:
+		Navigation pages
+	scripts:
+		Used by forms on php pages
+
