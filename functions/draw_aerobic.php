@@ -6,7 +6,7 @@
 		echo "<table>";
 		echo "<tr><td><tr><td>Duration</td>";
 		echo "<td><input type='text' name='duration' id='duration'></td></tr>";	
-		echo "<tr><td><tr><td>Cals_burned</td>";
+		echo "<tr><td><tr><td>Cals burned</td>";
 		echo "<td><input type='text' name='cals_burned' id='calories burned'></td></tr>";
 		echo "<tr><td><tr><td>Distance</td>";
 		echo "<td><input type='text' name='distance' id='distance'></td></tr>";
