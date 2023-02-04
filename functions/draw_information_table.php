@@ -13,7 +13,10 @@
 			case "draw_muscle";
 				check_if_db_exists($exercise_type,$category);
 				get_user_interface($exercise_type,$category);
-			break;		
+			break;
+			case "show_history";
+				get_user_interface("show_history","");
+			break;
 		}	
 	}
 ?>

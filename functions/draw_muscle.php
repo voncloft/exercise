@@ -13,5 +13,6 @@
 		echo "</td></tr></table>";
 		echo "<input type='submit'>";
 		echo "</form>";
+		echo "<a href=../index.php>Home</a>";
 	}
 ?>
