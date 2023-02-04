@@ -21,6 +21,7 @@
 				"date_of_workout date, ".
 				"weight int, ".
 				"reps int, ".
+				"notes text, ".
 				"primary key (id))";	
 				 $conn->query($sql);		
 			break;

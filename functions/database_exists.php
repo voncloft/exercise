@@ -6,7 +6,7 @@
 		switch($exercise_type)	
 		{
 			case "draw_aerobic";
-				$sql="Create table if not exists ".str_replace("draw_","",$category)."(".
+				$sql="Create table if not exists ".$category."(".
 				"id int not null auto_increment,	".
 				"date_of_workout date, ".
 				"duration int, ".
@@ -16,7 +16,7 @@
 				$conn->query($sql);
 			break;
 			case "draw_muscle";
-				$sql="Create table if not exists ".str_replace("draw_","",$category)."(".
+				$sql="Create table if not exists ".$category."(".
 				"id int not null auto_increment,	".
 				"date_of_workout date, ".
 				"weight int, ".
