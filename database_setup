@@ -1,0 +1,245 @@
+-- MariaDB dump 10.17  Distrib 10.5.4-MariaDB, for Linux (x86_64)
+--
+-- Host: localhost    Database: exercise
+-- ------------------------------------------------------
+-- Server version	10.5.4-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Current Database: `exercise`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `exercise` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `exercise`;
+
+--
+-- Table structure for table `butterflies`
+--
+
+DROP TABLE IF EXISTS `butterflies`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `butterflies` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date_of_workout` date DEFAULT NULL,
+  `weight` int(11) DEFAULT NULL,
+  `reps` int(11) DEFAULT NULL,
+  `notes` text DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `butterflies`
+--
+
+LOCK TABLES `butterflies` WRITE;
+/*!40000 ALTER TABLE `butterflies` DISABLE KEYS */;
+/*!40000 ALTER TABLE `butterflies` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `curling`
+--
+
+DROP TABLE IF EXISTS `curling`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `curling` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date_of_workout` date DEFAULT NULL,
+  `weight` int(11) DEFAULT NULL,
+  `reps` int(11) DEFAULT NULL,
+  `notes` text DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `curling`
+--
+
+LOCK TABLES `curling` WRITE;
+/*!40000 ALTER TABLE `curling` DISABLE KEYS */;
+/*!40000 ALTER TABLE `curling` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `planks`
+--
+
+DROP TABLE IF EXISTS `planks`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `planks` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date_of_workout` date DEFAULT NULL,
+  `weight` int(11) DEFAULT NULL,
+  `reps` int(11) DEFAULT NULL,
+  `notes` text DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `planks`
+--
+
+LOCK TABLES `planks` WRITE;
+/*!40000 ALTER TABLE `planks` DISABLE KEYS */;
+/*!40000 ALTER TABLE `planks` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `pushups`
+--
+
+DROP TABLE IF EXISTS `pushups`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `pushups` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date_of_workout` date DEFAULT NULL,
+  `weight` int(11) DEFAULT NULL,
+  `reps` int(11) DEFAULT NULL,
+  `notes` text DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pushups`
+--
+
+LOCK TABLES `pushups` WRITE;
+/*!40000 ALTER TABLE `pushups` DISABLE KEYS */;
+/*!40000 ALTER TABLE `pushups` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `running`
+--
+
+DROP TABLE IF EXISTS `running`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `running` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date_of_workout` date DEFAULT NULL,
+  `duration` int(11) DEFAULT NULL,
+  `distance` double DEFAULT NULL,
+  `cals_burned` double DEFAULT NULL,
+  `notes` text DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `running`
+--
+
+LOCK TABLES `running` WRITE;
+/*!40000 ALTER TABLE `running` DISABLE KEYS */;
+INSERT INTO `running` VALUES (1,'2022-12-27',30,1.5,201,NULL),(2,'2023-01-07',30,1.5,201,NULL),(3,'2023-01-08',30,1.5,201,NULL),(4,'2023-01-10',30,1.5,201,NULL),(5,'2023-01-14',30,1.5,201,NULL),(6,'2023-01-15',30,1.5,201,NULL),(7,'2023-01-17',30,1.5,201,NULL),(8,'2023-01-18',30,1.5,201,NULL),(9,'2023-01-20',30,1.5,201,NULL),(10,'2023-01-21',30,1.5,201,NULL),(11,'2023-01-23',60,3,402,NULL),(12,'2023-01-25',60,3,402,NULL),(13,'2023-01-28',60,3.27,428,NULL),(14,'2023-01-29',65,3.43,454,NULL),(15,'2023-01-30',30,1.5,201,NULL),(16,'2023-02-01',60,3.16,418,NULL),(19,'2023-02-04',60,3,402,'');
+/*!40000 ALTER TABLE `running` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `single_weights`
+--
+
+DROP TABLE IF EXISTS `single_weights`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `single_weights` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date_of_workout` date DEFAULT NULL,
+  `weight` int(11) DEFAULT NULL,
+  `reps` int(11) DEFAULT NULL,
+  `notes` text DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `single_weights`
+--
+
+LOCK TABLES `single_weights` WRITE;
+/*!40000 ALTER TABLE `single_weights` DISABLE KEYS */;
+/*!40000 ALTER TABLE `single_weights` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tricep_curls`
+--
+
+DROP TABLE IF EXISTS `tricep_curls`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tricep_curls` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date_of_workout` date DEFAULT NULL,
+  `weight` int(11) DEFAULT NULL,
+  `reps` int(11) DEFAULT NULL,
+  `notes` text DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tricep_curls`
+--
+
+LOCK TABLES `tricep_curls` WRITE;
+/*!40000 ALTER TABLE `tricep_curls` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tricep_curls` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `twist_reps`
+--
+
+DROP TABLE IF EXISTS `twist_reps`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `twist_reps` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date_of_workout` date DEFAULT NULL,
+  `weight` int(11) DEFAULT NULL,
+  `reps` int(11) DEFAULT NULL,
+  `notes` text DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `twist_reps`
+--
+
+LOCK TABLES `twist_reps` WRITE;
+/*!40000 ALTER TABLE `twist_reps` DISABLE KEYS */;
+/*!40000 ALTER TABLE `twist_reps` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-02-04 22:49:34
