@@ -1,9 +1,9 @@
 <?php
 	function draw_aerobic($category)
 	{
-		echo "<form action='../scripts/aerobic.php' method='post'>";	
+		echo "<center><form action='../scripts/aerobic.php' method='post'>";	
 		echo "<input type='hidden' name='category' id='category' value='".$category."'>";	
-		echo "<table>";
+		echo "<table><caption>".str_replace("_"," ",$category)."</caption>";
 		echo "<tr><td><tr><td>Duration</td>";
 		echo "<td><input type='text' name='duration' id='duration'></td></tr>";	
 		echo "<tr><td><tr><td>Cals burned</td>";
@@ -14,8 +14,8 @@
 		echo "<td><input type='text' name='notes' id='notes'></td></tr>";
 		echo "</td></tr></table>";
 		echo "<input type='submit'>";
+		echo "<br><a href=../index.php>Home</a>";	
 		echo "</form>";
-		echo "<a href=../index.php>Home</a>";
 	}
 ?>
 

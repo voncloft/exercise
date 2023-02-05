@@ -18,7 +18,7 @@ function show_workouts()
 		}	
 		$sql = 'SELECT * FROM '.$table[0];
 		$result = mysqli_query($conn, $sql);
-		echo '<table border=2 width=95%><caption>'.$table[0];
+		echo '<table border=2 width=95%><caption>'.str_replace("_"," ",$table[0]);
 		echo "<tr>";
 		while ($col = $result->fetch_field()) {
     		echo "<th>" . str_replace("_"," ",$col->name) . "</th>";
@@ -36,6 +36,6 @@ function show_workouts()
 	echo '</table><br></td>';
 	$counter++;	
 	}
+	echo "<a href=../index.php>Home</a>";
 }
-echo "<center><a href='../index.php'>Home</a>";
 ?>
