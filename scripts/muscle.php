@@ -4,5 +4,5 @@
 	$sql="insert into ".$_POST['category']."(date_of_workout,weight,reps,notes)Values('".
 	"$date"."','".$_POST['weight']."','".$_POST['reps']."','".$_POST['notes']."')";
 	$conn->query($sql);
-	echo $sql;
+	header("Location: ../index.php");
 ?>

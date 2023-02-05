@@ -6,5 +6,5 @@
 	$sql="insert into ".$_POST['category']."(date_of_workout,duration,distance,notes,cals_burned)Values('".
 	"$date"."','".$_POST['duration']."','".$_POST['distance']."','".$_POST['notes']."','".$_POST['cals_burned']."')";
 	$conn->query($sql);
-	echo $sql;
+	header("Location: ../index.php");
 ?>
