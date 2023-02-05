@@ -36,6 +36,6 @@ function show_workouts()
 	echo '</table><br></td>';
 	$counter++;	
 	}
-
 }
+echo "<center><a href='../index.php'>Home</a>";
 ?>
