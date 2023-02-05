@@ -16,4 +16,5 @@
 	</table>
 </td></tr></table>
 <a target=_blank href='php/show_history.php'>Show History</a><br>
-TODO: Fix muscle exercises where no weights are needed
+TODO:<br> Fix muscle exercises where no weights are needed<Br>
+Add colors to final results green normal red overkill<br>
