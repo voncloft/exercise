@@ -11,6 +11,7 @@
 				"date_of_workout date, ".
 				"duration int, ".
 				"distance double, ".
+				"cals_burned double, ".
 				"notes text, ".
 				"primary key (id))";
 				$conn->query($sql);
