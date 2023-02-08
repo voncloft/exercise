@@ -26,6 +26,14 @@
 				"primary key (id))";	
 				 $conn->query($sql);		
 			break;
+			case "draw_weight";
+				$sql="Create table if not exists ".$category."(".
+				"id int not null auto_increment,	".
+				"date_of_workout date, ".
+				"weight double, ".
+				"primary key (id))";	
+				 $conn->query($sql);		
+			break;
 	}
 }
 ?>

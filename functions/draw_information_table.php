@@ -17,6 +17,10 @@
 			case "show_history";
 				get_user_interface("show_history","");
 			break;
+			case "draw_weight";
+				check_if_db_exists($exercise_type,$category);
+				get_user_interface("draw_weight","weight");
+			break;
 		}	
 	}
 ?>
